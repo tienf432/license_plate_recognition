@@ -1,0 +1,21 @@
+! apt install tesseract-ocr
+! apt install libtesseract-dev
+
+!pip install pytesseract
+!pip install opencv-python
+
+# Loading the required python modules
+import pytesseract # this is tesseract module
+import matplotlib.pyplot as plt
+import cv2 # this is opencv module
+import os
+from PIL import Image
+
+import os
+# # Make sure to change the path to your correct Google drive path
+os.chdir('/content/drive/MyDrive/testimage')
+# # Use the ls command to show all the folders and files in this location. If you see the file "datingSet.csv", the remaining code should work
+!ls
+
+from google.colab import drive
+drive.mount('/content/drive')
